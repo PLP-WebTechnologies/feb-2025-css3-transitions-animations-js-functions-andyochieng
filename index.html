@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Webpage</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1 class="animated-title">Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro-section">
+            <h2>About This Page</h2>
+            <p>This is an interactive page with CSS animations and JavaScript. I've added user preferences that are saved to localStorage.</p>
+            
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Sample image" class="hover-effect">
+                <figcaption>Hover over this image to see an animation</figcaption>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Features Demonstrated</h2>
+            <ul>
+                <li>CSS animations and transitions</li>
+                <li>JavaScript integration</li>
+                <li>LocalStorage for user preferences</li>
+                <li>Interactive elements</li>
+            </ul>
+            
+            <div class="theme-controls">
+                <h3>Change Theme Color</h3>
+                <div class="color-buttons">
+                    <button id="theme-blue" class="theme-btn" data-color="#4b6cb7">Blue</button>
+                    <button id="theme-green" class="theme-btn" data-color="#28a745">Green</button>
+                    <button id="theme-purple" class="theme-btn" data-color="#6f42c1">Purple</button>
+                    <button id="theme-red" class="theme-btn" data-color="#dc3545">Red</button>
+                </div>
+            </div>
+            
+            <div class="animation-demo">
+                <h3>Trigger Animation</h3>
+                <button id="animate-btn" class="action-btn">Animate!</button>
+                <div id="animation-box" class="animation-box"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Interactive Demo Page</p>
+    </footer>
+    
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
